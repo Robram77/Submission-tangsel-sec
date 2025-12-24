@@ -1,0 +1,6 @@
+Parameter			Nilai		     Arti Singkat
+Port				 22	        SSH berjalan di port 22
+PermitRootLogin		  prohibit-password   Root login hanya via SSH key
+PasswordAuthentication		 yes	     Login pakai password diizinkan
+PubkeyAuthentication		 yes	     Login pakai SSH key diizinkan
+MaxAuthTries			  6	        Maks 6 kali gagal login

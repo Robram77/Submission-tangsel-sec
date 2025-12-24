@@ -1,0 +1,3 @@
+hostname lama : setra
+hostname baru : tatang-mambo-lab
+command       : hostnamectl set-hostname tatang-mambo-lab

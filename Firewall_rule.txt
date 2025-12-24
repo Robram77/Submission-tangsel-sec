@@ -1,0 +1,2 @@
+Status    : Active
+List Rule : Allow 22/tcp

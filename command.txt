@@ -1,0 +1,24 @@
+#GREP
+grep security lab.targets.txt (cari baris yang mengandung "security"di dalam
+lab_targets.txt)
+grep -i security lab_targets.txt (sama seperti perintah sebelumnya tetapi perintah ini 
+tidak memiliki batasan mau itu uppercase ataupun lowercase)
+grep -v security lab_targets.txt (perintah ini berisikan perintah untuk menampilkan baris
+selain "security" di dalam file)
+grep -n security lab_targets.txt (perintah ini menampilkan nomor baris sekaligus)
+
+#CUT & AWK
+cut -d: -f1 targets.txt (untuk mengekstrak kolom secara spesifik)
+awk '{print}' targets.txt (Print field pertama dari setiap baris)
+
+#UNIQ & SORT
+sort ips.txt (mengurutkan baris A-Z)
+sort -u ips.txt atau sort ips.txt | uniq (untuk mengurutkan dan menghapus duplikat)
+
+#PIPLINE (|)
+ini biasanya untuk menggabungkan perintah sekaligus contoh
+cat ips.txt | grep 192.168.1.2 | sort | uniq
+cat : untuk melihat file
+grep 192.168.1.2 : mencari baris yang mengandung 192.168.1.2
+sort : untuk mengurutkan
+uniq : menghapus duplikat yang ada

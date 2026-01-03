@@ -7,15 +7,15 @@
 - centOs: systemctl start sshd
 ------------------------
 ## check service status ssh
--kali  : systemctl status ssh
+- kali  : systemctl status ssh
 - centOs: systemctl status sshd
 ------------------------
 ## add firewall rule
--kali  : ufw allow 22/tcp
--centOs: firewall-cmd --add-service=ssh --permanent
+- kali  : ufw allow 22/tcp
+- centOs: firewall-cmd --add-service=ssh --permanent
 ------------------------
 ## view system info
--kali  : uname -a
--centOs: hostnamectl
+- kali  : uname -a
+- centOs: hostnamectl
 ------------------------
 
